@@ -1,0 +1,30 @@
+[
+    {
+        "sale": 50,
+        "path": "https://shorturl.at/aczEP",
+        "title": "Decorative forged bridge",
+        "last_price": 500,
+        "first_price": 100
+    },
+    {
+        "sale": 34,
+        "path": "https://shorturl.at/guLT5",
+        "title": "Flower basket",
+        "last_price": 100,
+        "first_price": 150
+    },
+    {
+        "sale": 25,
+        "path": "https://shorturl.at/oIKW0",
+        "title": "Aquarium lock",
+        "last_price": 150,
+        "first_price": 290
+    },
+    {
+        "sale": 17,
+        "path": "https://shorturl.at/cdAHL",
+        "title": "Secateurs",
+        "last_price": 199,
+        "first_price": 240
+    }
+]

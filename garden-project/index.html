@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garden</title>
+    <!-- Style css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!--! wrapper -->
+    <div class="wrapper">
+
+        <!--! header -->
+        <header>
+            <!--? container -->
+            <div class="header__container container">
+                <a href="./index.html" class="brand">
+                    <img class="brand__logo" src="./images/icon/brand-logo.svg" alt="brand-logo">
+                </a>
+                
+                <nav>
+                    <ul class="nav">
+                        <li class="nav__item"><a href="#!" class="nav__link">Main Page</a></li>
+                        <li class="nav__item"><a href="#!" class="nav__link">Categories</a></li>
+                        <li class="nav__item"><a href="#!" class="nav__link">All products</a></li>
+                        <li class="nav__item"><a href="#!" class="nav__link">All sales</a></li>
+                    </ul>
+                </nav>
+                <!-- bars icon -->
+
+                <div class="header__bars_icon ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"  width="32px" height="32px">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                      </svg>
+                </div>
+                <div class="cart">
+                    <span class="cart__counter hide">0</span>
+                    <img class="cart__icon" src="./images/icon/cart-icon.svg" alt="cart icon">
+                </div>
+            </div>
+        </header>
+
+        <!--! main -->
+        <main>
+            <!--? section -> intro -->
+            <section class="intro">
+                <!--? container  -->
+                <div class="intro__container container">
+                    <h1 class="intro__title">Amazing Discounts on Garden Products!</h1>
+                    <a href="#!" class="intro__btn btn">Check out</a>
+                </div>
+            </section>
+
+            <!--? section -> categories  -->
+            <section class="categories">
+                <div class="categories__container container">
+                    <div class="categories__nav">
+                        <h1 class="categories__nav_title">Categories</h1>
+                        <a href="#!" class="categories__nav_btn">All categories </a>
+                    </div>
+                    <div class="categories__cards">
+                        <div class="categories__loader hide">
+                            <div class="categories__loader_photo">
+                                <div class="atomic__loader">
+                                    <div class="line"></div>
+                                    <div class="line frist"></div>
+                                    <div class="line second"></div>
+                                    <div class="line thrid"></div>
+                                    <div class="line forth"></div>
+                                </div>
+                            </div>
+                            <div class="categories__loader_text"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--? section -> ad  -->
+            <section class="ad">
+                <!--? container  -->
+                <div class="ad__container container">
+                    <div class="ad__title">5% off on the first order</div>
+                    <div class="ad__content">
+                        <div class="ad__photo">
+                            <img class="photo" src="./images/ad.png" alt="">
+                        </div>
+                        <div class="ad__form">
+                            <input type="text" class="ad__form_name" placeholder="Name">
+                            <input type="text" class="ad__form_phone" placeholder="Phone number">
+                            <input type="email" class="ad__form_email" placeholder="Email">
+                            <input type="submit" class="ad__form_submit" value="Get a discount">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--? section sale->  -->
+            <section class="sale">
+                <div class="sale__container container">
+                    <div class="sale__nav">
+                        <h1 class="sale__nav_title">Sale</h1>
+                        <a href="#!" class="sale__nav_btn">All sale</a>
+                    </div>
+                    <div class="sale__cards">
+                        
+                    </div>
+                </div>
+            </section>
+
+            <!-- ? ection endSale -->
+            <section class="endSale">
+                <div class="endSale__container container">
+                    <h1 class="endSale__title">Contact</h1>
+                    <div class="endSale__counters">
+                        <h1 class="counters__title">Diqqat!</h1>
+                        <div class="counters__body">
+                            <h1 class="counters__body_title">Chegirma tugash vaqti: </h1>
+                            <div class="times">
+                                <div class="times__day time">
+                                    <span class="times__value day">00</span>
+                                    <span class="times__text">Day</span>
+                                </div>
+                                <!-- hour -->
+                                <div class="times__hour time">
+                                    <span class="times__value hour">00</span>
+                                    <span class="times__text">Hour</span>
+                                </div>
+                                <!-- minute -->
+                                <div class="times__minute time">
+                                    <span class="times__value minute">00</span>
+                                    <span class="times__text">Minute</span>
+                                </div>
+                                <!-- second -->
+                                <div class="times__second time">
+                                    <span class="times__value time__second">00</span>
+                                    <span class="times__text">Second</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--! footer  -->
+        <footer>
+            <div class="footer__container container">
+                <iframe class="footer__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.161179290388!2d67.21988111176252!3d37.33869267198216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f3537e19ef2f63f%3A0x7ec45a6c2d1e30e9!2sIT%20Center%20Termiz%20tumani!5e0!3m2!1sru!2s!4v1706940338606!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="./javascript/app.js"></script>
+</body>
+</html>
