@@ -23,7 +23,7 @@
                     <ul class="nav">
                         <li class="nav__item"><a href="index.html" class="nav__link">Main Page</a></li>
                         <li class="nav__item"><a href="categories.html" class="nav__link">Categories</a></li>
-                        <li class="nav__item"><a href="all_products.html" class="nav__link">All products</a></li>
+                        <li class="nav__item"><a href="./all_products.html" class="nav__link">All products</a></li>
                         <li class="nav__item"><a href="#!" class="nav__link">All sales</a></li>
                     </ul>
                 </nav>
@@ -43,68 +43,69 @@
 
         <!--! main -->
         <main>
-            <!--? section -> intro -->
-            <!-- <section class="intro">
-                <div class="intro__container container">
-                    <h1 class="intro__title">Amazing Discounts on Garden Products!</h1>
-                    <a href="#!" class="intro__btn btn">Check out</a>
-                </div>
-            </section> -->
-
-            <!--? section -> categories  -->
-            <section class="categories">
-                <div class="categories__container container">
-                    <div class="categories__nav">
-                        <h1 class="categories__nav_title">Categories</h1>
-                        <a href="#!" class="categories__nav_btn">All categories </a>
-                    </div>
-                    <div class="categories__cards">
-                        <div class="categories__loader hide">
-                            <div class="categories__loader_photo">
-                                <div class="atomic__loader">
-                                    <div class="line"></div>
-                                    <div class="line frist"></div>
-                                    <div class="line second"></div>
-                                    <div class="line thrid"></div>
-                                    <div class="line forth"></div>
+            <!--? section sale->  -->
+            <section class="sale">
+                        <div class="sale__container container">
+                            <div class="categories__nav">
+                                <h1 class="categories__nav_title">Tools and equipment</h1>
+                                <!-- <a href="#!" class="categories__nav_btn">All categories </a> -->
+                            </div>
+                            <div class="sort__nav">
+                                <div class="fromTo__price">
+                                    <p class="fromTo__price_title">Price</p>
+                                    <input class="from__input" type="number" placeholder="from">
+                                    <input class="to__input" type="number" placeholder="to">
+                                </div>
+                                <div class="discount__items">
+                                    <p class="discount__item_title">Discounted items</p>
+                                    <div class="discount__checkbox">
+                                        <div class="check__icon">
+                                            <div class="discount__line"></div>
+                                            <div class="discount__line"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sorted">
+                                    <p class="sorted__title ">Sorted</p>
+                                    <div class="sorted__drobdown">
+                                        <div class="drobdown__nav ">
+                                            <p class="drobdown__nav_title">by default</p>
+                                            <div class="drobdown__nav_arrow_icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="24" height="24" class="w-6 h-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                                  </svg>
+                                            </div>
+                                        </div>
+                                        <div class="drobdown__body hide">
+                                            <ul class="body__nav">
+                                                <li class="body__item"><a href="#!" class="body__link">by default</a></li>
+                                                <li class="body__item"><a href="#!" class="body__link">newest</a></li>
+                                                <li class="body__item"><a href="#!" class="body__link">price: high-low</a></li>
+                                                <li class="body__item"><a href="#!" class="body__link">price: low-high</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="categories__loader_text"></div>
+                            <div class="categories__cards hide">
+                                <div class="categories__loader hide">
+                                    <div class="categories__loader_photo">
+                                        <div class="atomic__loader">
+                                            <div class="line"></div>
+                                            <div class="line frist"></div>
+                                            <div class="line second"></div>
+                                            <div class="line thrid"></div>
+                                            <div class="line forth"></div>
+                                        </div>
+                                    </div>
+                                    <div class="categories__loader_text"></div>
+                                </div>
+                            </div>
+                            <div class="sale__cards">
+                                
+                            </div>
                         </div>
-                    </div>
-                </div>
             </section>
-
-            <!--? section -> ad  -->
-            <!-- <section class="ad">
-                <div class="ad__container container">
-                    <div class="ad__title">5% off on the first order</div>
-                    <div class="ad__content">
-                        <div class="ad__photo">
-                            <img class="photo" src="./images/ad.png" alt="">
-                        </div>
-                        <div class="ad__form">
-                            <input type="text" class="ad__form_name" placeholder="Name">
-                            <input type="text" class="ad__form_phone" placeholder="Phone number">
-                            <input type="email" class="ad__form_email" placeholder="Email">
-                            <input type="submit" class="ad__form_submit" value="Get a discount">
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-
-            <!--? section sale->  -->
-            <!-- <section class="sale">
-                <div class="sale__container container">
-                    <div class="sale__nav">
-                        <h1 class="sale__nav_title">Sale</h1>
-                        <a href="#!" class="sale__nav_btn">All sale</a>
-                    </div>
-                    <div class="sale__cards">
-                        
-                    </div>
-                </div>
-            </section> -->
 
             <!-- ? ection endSale -->
             <section class="endSale">

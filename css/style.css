@@ -223,7 +223,8 @@ header .container {
 }
 
 /* ? categories card */
-.categories__cards {
+.categories__cards,
+#all__products {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(316px, 1fr));
   gap: 32px;
@@ -750,4 +751,171 @@ header .container {
   .ad__title {
     font-size: 30px;
   }
+}
+
+/*! all_product page style  */
+.sort__nav,
+.fromTo__price,
+.discount__items,
+.sorted {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.sort__nav {
+  column-gap: 40px;
+  padding: 40px 0;
+  flex-wrap: wrap;
+  row-gap: 32px;
+}
+
+.fromTo__price {
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.fromTo__price_title,
+.discount__item_title,
+.sorted__title {
+  color: var(--clr-hover-btn);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%;
+  text-align: left;
+}
+
+.from__input,
+.to__input,
+.check__input {
+  box-sizing: border-box;
+  border: 1px solid var(--clr-border);
+  border-radius: 6px;
+  padding: 8px 16px;
+  outline: none;
+  color: var(--clr-opacity);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 126%;
+  text-align: left;
+}
+
+.check__input {
+  width: 36px;
+  height: 36px;
+  outline: none;
+  border: 1px solid var(--clr-border);
+  margin-left: 16px;
+}
+
+.sorted__title {
+  margin-right: 16px;
+}
+
+.sorted__drobdown {
+  box-sizing: border-box;
+  /* grey divider */
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 6px;
+  position: relative;
+}
+
+.drobdown__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 8px 16px;
+  min-width: 215px;
+  width: 100%;
+}
+
+.drobdown__nav_arrow_icon {
+  cursor: pointer;
+}
+
+.drobdown__body {
+  border-radius: 6px;
+  background: var(--clr-white);
+  padding: 16px;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0px 0px 10px 1.2px var(--clr-opacity);
+}
+
+.body__nav {
+  gap: 4px;
+}
+
+.body__link {
+  color: var(--clr-sale-price);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 126%;
+  text-align: left;
+  text-decoration: none;
+}
+
+.drobdown__overlay {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 10;
+  background-color: transparent;
+}
+
+.body__link:hover {
+  color: var(--clr-hover-btn);
+}
+
+.discount__checkbox {
+  min-width: 36px;
+  /* width: 100%; */
+  height: 36px;
+  outline: none;
+  border: 1px solid var(--clr-border);
+  margin-left: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.discount__checked {
+  background-color: var(--clr-ad-btn);
+  position: relative;
+}
+
+.discount__line {
+  width: 10px;
+  height: 2px;
+  background-color: var(--clr-white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2px;
+}
+
+.check__icon {
+  transform: rotate(-10deg);
+  width: 100%;
+  height: 100%;
+  position: relative;
+  left: -3px;
+  top: -1px;
+}
+
+.discount__line:nth-child(1) {
+  transform: rotate(56deg);
+  left: 10px;
+  top: 20px;
+}
+
+.discount__line:nth-child(2) {
+  transform: rotate(314deg);
+  width: 20px;
+  left: 14px;
 }

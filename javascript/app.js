@@ -1,6 +1,7 @@
 // API url
 const CATEGORIES_API = "./data/categories_card.json";
 const SALE_API = "./data/sale_card.json";
+// const RANDOM_API = "https://fakestoreapi.com/products";
 // send request
 const getCategoriesData = async (resource) => {
   loader("hide");
@@ -157,3 +158,43 @@ document.addEventListener("click", (e) => {
     nav.classList.add("hide");
   }
 });
+
+// drobdown menu
+let drobdownOpenBtn = document.querySelector(".drobdown__nav_arrow_icon"),
+  drobdownBody = document.querySelector(".drobdown__body"),
+  drobdownOverlay = document.querySelector(".drobdown__overlay"),
+  bodyItem = document.querySelectorAll(".body__item");
+
+drobdownOpenBtn.addEventListener("click", () => {
+  drobdownBody.classList.toggle("show-ib");
+  drobdownOverlay.classList.remove("hide");
+});
+
+drobdownOverlay.addEventListener("click", () => {
+  drobdownBody.classList.remove("show-ib");
+  drobdownOverlay.classList.add("hide");
+});
+
+bodyItem.forEach((item) => {
+  let drobdownNavTitle = document.querySelector(".drobdown__nav_title");
+  let selectTExt = localStorage.getItem("select")
+    ? localStorage.getItem("select")
+    : [];
+
+  drobdownNavTitle.textContent = selectTExt;
+  item.addEventListener("click", () => {
+    let itemText = item.querySelector(".body__link");
+    drobdownNavTitle.textContent = itemText.textContent;
+    // localStorage.setItem
+    localStorage.setItem("select", drobdownNavTitle.textContent);
+    drobdownOverlay.classList.add("hide");
+    drobdownBody.classList.remove("show-ib");
+  });
+});
+
+// checkbox
+let discountCheckbox = document.querySelector(".discount__checkbox");
+discountCheckbox.addEventListener("click", () => {
+  discountCheckbox.classList.toggle("discount__checked");
+});
+
