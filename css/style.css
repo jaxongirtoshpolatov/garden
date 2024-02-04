@@ -1050,6 +1050,7 @@ header .container {
   .categories__nav_btn::after,
   .sale__nav_btn::after {
     background-color: transparent;
+    display: none;
   }
 }
 
