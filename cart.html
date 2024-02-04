@@ -11,6 +11,7 @@
     <!--! wrapper -->
     <div class="wrapper">
         <div class="drobdown__overlay hide"></div>
+
         <!--! header -->
         <header>
             <!--? container -->
@@ -23,7 +24,7 @@
                     <ul class="nav">
                         <li class="nav__item"><a href="index.html" class="nav__link">Main Page</a></li>
                         <li class="nav__item"><a href="categories.html" class="nav__link">Categories</a></li>
-                        <li class="nav__item"><a href="./all_products.html" class="nav__link">All products</a></li>
+                        <li class="nav__item"><a href="all_products.html" class="nav__link">All products</a></li>
                         <li class="nav__item"><a href="#!" class="nav__link">All sales</a></li>
                     </ul>
                 </nav>
@@ -34,7 +35,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                       </svg>
                 </div>
-                <a class="cart" href="cart.html">
+                <a class="cart" href="./cart.html">
                     <span class="cart__counter hide">0</span>
                     <img class="cart__icon" src="./images/icon/cart-icon.svg" alt="cart icon">
                 </a>
@@ -43,68 +44,82 @@
 
         <!--! main -->
         <main>
-            <!--? section sale->  -->
-            <section class="sale">
-                        <div class="sale__container container">
-                            <div class="categories__nav">
-                                <h1 class="categories__nav_title">Tools and equipment</h1>
-                                <!-- <a href="#!" class="categories__nav_btn">All categories </a> -->
-                            </div>
-                            <div class="sort__nav">
-                                <div class="fromTo__price">
-                                    <p class="fromTo__price_title">Price</p>
-                                    <input class="from__input" type="number" placeholder="from">
-                                    <input class="to__input" type="number" placeholder="to">
-                                </div>
-                                <div class="discount__items">
-                                    <p class="discount__item_title">Discounted items</p>
-                                    <div class="discount__checkbox">
-                                        <div class="check__icon">
-                                            <div class="discount__line"></div>
-                                            <div class="discount__line"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="sorted">
-                                    <p class="sorted__title ">Sorted</p>
-                                    <div class="sorted__drobdown">
-                                        <div class="drobdown__nav ">
-                                            <p class="drobdown__nav_title">by default</p>
-                                            <div class="drobdown__nav_arrow_icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="24" height="24" class="w-6 h-6">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                                                  </svg>
-                                            </div>
-                                        </div>
-                                        <div class="drobdown__body hide">
-                                            <ul class="body__nav">
-                                                <li class="body__item"><a href="#!" class="body__link">by default</a></li>
-                                                <li class="body__item"><a href="#!" class="body__link">newest</a></li>
-                                                <li class="body__item"><a href="#!" class="body__link">price: high-low</a></li>
-                                                <li class="body__item"><a href="#!" class="body__link">price: low-high</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
+
+            <!--? section -> categories  -->
+            <section class="categories cart__product">
+                <div class="categories__container  container">
+                    <div class="categories__nav">
+                        <h1 class="categories__nav_title shopping__nav_title">Shopping cart</h1>
+                        <a href="#!" class="categories__nav_btn">Back to the store </a>
+                    </div>
+                    <div class="cart__items ">
+                        <div class="categories__loader hide cart__loader">
+                            <div class="categories__loader_photo">
+                                <div class="atomic__loader">
+                                    <div class="line"></div>
+                                    <div class="line frist"></div>
+                                    <div class="line second"></div>
+                                    <div class="line thrid"></div>
+                                    <div class="line forth"></div>
                                 </div>
                             </div>
-                            <div class="categories__cards hide">
-                                <div class="categories__loader hide">
-                                    <div class="categories__loader_photo">
-                                        <div class="atomic__loader">
-                                            <div class="line"></div>
-                                            <div class="line frist"></div>
-                                            <div class="line second"></div>
-                                            <div class="line thrid"></div>
-                                            <div class="line forth"></div>
-                                        </div>
-                                    </div>
-                                    <div class="categories__loader_text"></div>
+                            <div class="categories__loader_text"></div>
+                        </div>
+                        <div class="cart__item">
+                           <div class="cart__photo">
+                                <img src="./images/product-img.png" alt="product-img">
+                           </div>
+                           <div class="cart__body">
+                            <div class="cart__body_nav">
+                                <div class="body__nav_title">Secateurs</div>
+                                <div class="cart__close_btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                      </svg>
                                 </div>
                             </div>
-                            <div class="sale__cards">
-                                
+                            <div class="cart__body_bottom">
+                                <div class="cart__counters">
+                                    <div class="cart__remove">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="rgb(139, 139, 139)" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+                                          </svg>
+                                    </div>
+                                    <div class="cart__count">0</div>
+                                    <div class="cart__add">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="rgb(139, 139, 139)" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                          </svg>
+                                    </div>
+                                </div>
+                                <div class="cart__item_price">
+                                    <div class="cart__item_last_price">$200</div>
+                                    <div class="cart__item_first_price">$600</div>
+                                </div>
+                            </div>
+                           </div>
+                        </div>
+                        <div class="buy__form">
+                            <div class="buy__form_nav">
+                                <h1 class="form__nav_title">Order details</h1>
+                                <div class="item__count">
+                                    <span class="count">0</span>
+                                    <p>Item</p>
+                                </div>
+                                <div class="form__nav_total">
+                                    <p class="total__title">Total</p>
+                                    <span class="total">$0</span>
+                                </div>
+                            </div>
+                            <div class="ad__form">
+                                <input type="text" class="ad__form_name" placeholder="Name">
+                                <input type="text" class="ad__form_phone" placeholder="Phone number">
+                                <input type="email" class="ad__form_email" placeholder="Email">
+                                <input type="submit" class="ad__form_submit" value="Order">
                             </div>
                         </div>
+                    </div>
+                </div>
             </section>
 
             <!-- ? ection endSale -->
