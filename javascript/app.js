@@ -64,7 +64,9 @@ function useSaleData(data) {
     createEl.classList.add("sale__card");
 
     createEl.innerHTML = `
+    <div class="all__cart_overlay"></div>
     <div class="sale__card_photo">
+    <a class="add__cart" href="#!">Add to cart</a>
         <span class="value">-${item.sale}%</span>
             <img class="photo" src=${item.path} alt="sale photo">
         </div>
@@ -78,6 +80,21 @@ function useSaleData(data) {
     `;
 
     parentEl.appendChild(createEl);
+
+    let saleOverlay = createEl.querySelector(".all__cart_overlay");
+    let addCart = createEl.querySelector(".add__cart");
+    saleOverlay.addEventListener("mouseover", () => {
+      addCart.classList.add("show__add");
+    });
+
+    addCart.addEventListener("mouseover", () => {
+      addCart.classList.add("show__add");
+    });
+
+    saleOverlay.addEventListener("mouseout", () => {
+      addCart.classList.remove("show__add");
+    });
+    console.log(saleOverlay);
   });
 }
 
@@ -197,4 +214,3 @@ let discountCheckbox = document.querySelector(".discount__checkbox");
 discountCheckbox.addEventListener("click", () => {
   discountCheckbox.classList.toggle("discount__checked");
 });
-

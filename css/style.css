@@ -415,6 +415,46 @@ header .container {
   height: 284px;
 }
 
+
+.all__cards .add__cart {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--clr-white);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 130%;
+  text-decoration: none;
+  background-color: var(--clr-ad-btn);
+  width: 95%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  z-index: 100;
+  display: none;
+}
+
+.show__add {
+  bottom: 10px !important;
+  display: inline-block !important;
+}
+
+.all__cards .sale__card{
+  position: relative;
+}
+
+.all__cart_overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.over__z0{
+  z-index: 0 !important;
+}
+
 .sale__card_photo .value {
   padding: 4px 8px;
   background-color: var(--clr-ad-btn);
@@ -713,6 +753,8 @@ header .container {
 .sale__nav_btn::after {
   width: 600px;
 }
+
+
 
 .cart__items {
   display: flex;
