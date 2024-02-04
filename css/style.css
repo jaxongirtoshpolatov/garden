@@ -1133,6 +1133,7 @@ header .container {
 
   .cart__body {
     border-bottom: 1px solid var(--clr-border);
+    border-left: none;
   }
 
   .cart__photo img {
