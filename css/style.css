@@ -66,6 +66,9 @@ body {
 }
 
 /*! header  */
+header {
+  border-bottom: 1px solid var(--clr-border);
+}
 header .container {
   display: flex;
   align-items: center;
@@ -229,6 +232,10 @@ header .container {
   grid-template-columns: repeat(auto-fill, minmax(316px, 1fr));
   gap: 32px;
   padding-top: 40px;
+}
+
+.all__card_item {
+  margin-top: 125px;
 }
 
 .categories__card_photo {
