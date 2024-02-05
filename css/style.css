@@ -415,8 +415,11 @@ header .container {
   height: 284px;
 }
 
+.sale__cards .add__cart {
+  display: none;
+}
 
-.all__cards .add__cart {
+.all__cards .add__cart, .sale__cards .add__cart {
   position: absolute;
   bottom: -50px;
   left: 50%;
@@ -433,7 +436,7 @@ header .container {
   border-radius: 8px;
   z-index: 100;
   display: none;
-  animation: show .3s ease alternate;
+  animation: show 0.3s ease alternate;
 }
 
 .add__cart:active {
@@ -457,7 +460,7 @@ header .container {
   display: inline-block !important;
 }
 
-.all__cards .sale__card{
+.all__cards .sale__card {
   position: relative;
 }
 
@@ -468,7 +471,7 @@ header .container {
   z-index: 10;
 }
 
-.over__z0{
+.over__z0 {
   z-index: 0 !important;
 }
 
@@ -772,8 +775,6 @@ header .container {
 .sale__nav_btn::after {
   width: 600px;
 }
-
-
 
 .cart__items {
   display: flex;
