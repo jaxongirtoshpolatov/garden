@@ -218,12 +218,12 @@ bodyItem.forEach((item) => {
   let selectTExt = localStorage.getItem("select")
     ? localStorage.getItem("select")
     : [];
+    // drobdownNavTitle.textContent = "by default";
 
   if (selectTExt) {
     drobdownNavTitle.textContent = selectTExt;
-  } else {
-    drobdownNavTitle.textContent = "by default";
-  }
+  } 
+
   item.addEventListener("click", () => {
     let itemText = item.querySelector(".body__link");
     drobdownNavTitle.textContent = itemText.textContent;
