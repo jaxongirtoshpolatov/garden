@@ -433,6 +433,23 @@ header .container {
   border-radius: 8px;
   z-index: 100;
   display: none;
+  animation: show .3s ease alternate;
+}
+
+.add__cart:active {
+  background-color: var(--clr-hover-btn);
+}
+
+/* show add cart button animation*/
+@keyframes show {
+  0% {
+    opacity: 0.3;
+    transform: translate(-50%, 10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -20px);
+  }
 }
 
 .show__add {
@@ -671,6 +688,8 @@ header .container {
 }
 
 .body__nav {
+  display: flex;
+  flex-direction: column;
   gap: 4px;
 }
 
